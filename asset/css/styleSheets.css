@@ -5,6 +5,8 @@ body
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
     text-align: center;
+    background-image: url("/asset/img/background.jpg");
+    background-size: contain;
 }
 
 #main
