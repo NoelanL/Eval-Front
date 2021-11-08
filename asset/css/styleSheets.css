@@ -4,7 +4,6 @@ body
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
-    text-align: center;
     background-image: url("/asset/img/background.jpg");
     background-size: contain;
 }
@@ -172,4 +171,134 @@ i
 #bradley-img
 {
     height: 707px;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .box-different, .social, .contact, .portfolio{
+        display: flex;
+        font-size: 10px;
+        height: 50px;
+        width: 70%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #bradley-cooper{
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #img{
+        display: flex;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 750px;
+        margin: 0;
+        height: 250px;
+        width: 275px;
+        order: -1;
+    }
+
+    #bradley-img{
+        height: 218px;
+        width: 125px;
+    }
+
+    h1{
+        margin-right: 22px;
+    }
+
+    #resume, #button-contact{
+        margin-left: 30px;
+    }
+
+    #education{
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .social{
+        width: 71.5%;
+    }
+
+    .contact{
+        width: 68.5%;
+    }
+
+    .portfolio{
+        width: 72.5%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #bradley-cooper{
+        flex-direction: column;
+    }
+
+    #bradley-img{
+        height: 262px;
+        width: 150px;
+    }
+
+    .box-different, .social, .portfolio{
+        display: flex;
+        font-size: 10px;
+        height: 50px;
+        width: 33%;
+        top: 0;
+        left: 0;
+        right: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .contact{
+        display: flex;
+        font-size: 10px;
+        height: 50px;
+        width: 28%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .social{
+        display: flex;
+        font-size: 10px;
+        height: 50px;
+        width: 35%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .portfolio{
+        width: 36.5%;
+    }
 }
